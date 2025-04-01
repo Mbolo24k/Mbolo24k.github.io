@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<link rel="stylesheet" href="estilos.css.css">
+<title>PagiNa wEB</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+        <img src="imagenes/imagenprincipal.jpg" class="imagenprincipal">
+        <img src="imagenes/imagenencabezado.webp" class="imagenencabezado">
+        <img src="imagenes/imagen3.jpg" class="imagenen3">
+        <h1>ARTE RENACENTISTA</h1>
+        </header>
+        <nav>
+            <div class="encabezado">
+                <p class="texto1">HOY PRESENTAMOS A: <b>SANDRO BOTTICELLI</b></p>
+                <img src="imagenes/retrato.jpg" class="retrato">
+                
+            </div>
+        
+        </nav>
+<aside class="datos">
+    <div class="menu">
+        <a href="historia.html">HISTORIA</a>
+    </div>
+    <div class="menu">
+        <a href="obras.html">OBRAS</a>
+    </div>
+    <div class="menu">
+        <a href="tusdatos.html">TUS DATOS</a>
+    </div>
+    <div class="menu">
+        <a href="index.html">INICIO</a>
+    </div>
+</aside>
+<main>
+    <h1 class="h1">QUE OPINAS</h1>
+    <form>
+        <fieldset>
+            <legend><h2>Datos de registro</h2></legend>
+            <ul>
+               
+                <li>
+                    <label for="usuario">Nombre de usuario:</label>
+                    <input type="text" id="username" size="8" minlength="6" maxlength="15" required>
+                </li><br>
+                <li>
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="text" id="password" size="8" minlength="6" maxlength="15" required>
+                </li><br>
+                <li>
+                    <label for="contraseña">Repita Contraseña:</label>
+                    <input type="text" id="password" size="8" minlength="6" maxlength="15" required>
+                </li><br>
+                <li>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="email" name="correo_usuario" size="40" placeholder="Correo electronico" required>
+                </li><br>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend><h2>Datos Personales</h2></legend>
+            
+                <li>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" size="15" maxlength="15" placeholder="Nombre completo" required>
+                </li><br>
+
+                <li>
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" id="fecha" name="nacimiento_usuario" required>
+                </li><br>
+                <li>
+                    <label>Sexo:</label>
+                    <input type="radio" id="sexo1" name="hym" value="hombre" required><label for="sexo1">Hombre</label>
+                    <input type="radio" id="sexo2" name="hym" value="mujer" required><label for="sexo2">Mujer</label>
+                </li><br>
+                <li>
+                    <label for="numero">Número de teléfono:</label>
+                    <input type="tel" id="numero" name="telefono_usuario" placeholder="teléfono móvil" required>
+                </li><br>
+                <li>
+                    <label for="color">Color de avatar:</label>
+                    <input type="color" id="color" name="color">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend><h2>Danos tu opinión</h2></legend>
+            <ul>
+                <li>
+                <label for="satisfaccion">Califique su satisfacción:</label>
+                    <input list="notas" id="satisfaccion" name="satisfaccion">
+                        <datalist id="notas">
+                         <option value="1 - Muy Insatisfecho"></option>
+                         <option value="2 - Insatisfecho"></option>
+                         <option value="3 - Neutral"></option>
+                         <option value="4 - Satisfecho"></option>
+                         <option value="5 - Muy Satisfecho"></option>
+                        </datalist>
+                    </li>
+                <li>
+                    <label for="habilidades">Describe un comentario:</label><br>
+                    <textarea id="habilidades" rows="6" cols="50" required></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <section class="botones">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Valores por defecto">
+        </section>
+    </form>
+</main>
+
+
+
+<footer>
+    Página desarrollada por <a href="https://github.com/mbolo24k" target="_blank" title="Github">Ezequiel Richard Cuarema Abogo</a>
+</footer>
+    </div>
+</body>
+</html>
